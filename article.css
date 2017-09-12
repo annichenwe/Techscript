@@ -16,13 +16,13 @@
   flex-wrap: wrap; }
 
 .article_layout {
-  width: 50vw;
+  width: 55vw;
   height: 100vh;
   background-color: white;
   padding-left: 24px; }
 
 .photo_box {
-  width: 50vw;
+  width: 45vw;
   height: 100vh;
   background-color: gray; }
 
