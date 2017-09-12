@@ -1,0 +1,42 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden; }
+
+.wrapper_main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #c1c1d8;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.article_layout {
+  width: 50vw;
+  height: 100vh;
+  background-color: white;
+  padding-left: 24px; }
+
+.photo_box {
+  width: 50vw;
+  height: 100vh;
+  background-color: gray; }
+
+/*FONT AND COLOR*/
+.title {
+  color: gray;
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  font-weight: 400; }
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 70px;
+  font-weight: 400; }
+
+p {
+  font-family: 'Roboto', sans-serif; }
