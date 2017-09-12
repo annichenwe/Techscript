@@ -19,7 +19,7 @@
   width: 55vw;
   height: 100vh;
   background-color: white;
-  padding-left: 24px; }
+  padding-left: 32px; }
 
 .photo_box {
   width: 45vw;
@@ -35,7 +35,7 @@
 
 h1 {
   font-family: 'Oswald', sans-serif;
-  font-size: 70px;
+  font-size: 4.5vw;
   font-weight: 400; }
 
 p {
