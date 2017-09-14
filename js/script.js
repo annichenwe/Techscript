@@ -142,8 +142,7 @@ function selectNews(event) {
     document.getElementById('mypage').classList.remove('selected');
 
     document.querySelector('.newsarticle1').classList.toggle('displaynone');
-    document.querySelector('.newsarticle2').classList.toggle('displaynone');
-    document.querySelector('.newsarticle3').classList.toggle('displaynone');
+
 
 
 }
@@ -165,8 +164,7 @@ function selectInterview(event) {
     document.getElementById('mypage').classList.remove('selected');
 
     document.querySelector('.intarticle1').classList.toggle('displaynone');
-    document.querySelector('.intarticle2').classList.toggle('displaynone');
-    document.querySelector('.intarticle3').classList.toggle('displaynone');
+
 }
 
 
@@ -186,8 +184,7 @@ function selectReview(event) {
     document.getElementById('mypage').classList.remove('selected');
 
     document.querySelector('.revarticle1').classList.toggle('displaynone');
-    document.querySelector('.revarticle2').classList.toggle('displaynone');
-    document.querySelector('.revarticle3').classList.toggle('displaynone');
+
 }
 
 
@@ -210,16 +207,13 @@ function selectMypage(event) {
     // Add displaynone to all articled
 
     document.querySelector('.newsarticle1').classList.add('displaynone');
-    document.querySelector('.newsarticle2').classList.add('displaynone');
-    document.querySelector('.newsarticle3').classList.add('displaynone');
+
 
     document.querySelector('.intarticle1').classList.add('displaynone');
-    document.querySelector('.intarticle2').classList.add('displaynone');
-    document.querySelector('.intarticle3').classList.add('displaynone');
+
 
     document.querySelector('.revarticle1').classList.add('displaynone');
-    document.querySelector('.revarticle2').classList.add('displaynone');
-    document.querySelector('.revarticle3').classList.add('displaynone');
+
 
 }
 
