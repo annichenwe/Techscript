@@ -9,63 +9,103 @@
 
 <body>
     <div class="wrapper_head">
-        <div class="logo">TECHSCRIPT</div>
-        <div class="mypage">heiwa</div>
-        <div class="bookmark">hallo</div>
-        <div class="events">hola</div>
+        <div class="mini_menu">
+            <div class="head_title logo">Techscript</div>
+            <div id="articles" class="top_menu_item">
+                <img src="svg/savedarticles_oval.svg" alt="megaphone" class="icons">
+            </div>
+            <div id="events" class="top_menu_item selected">
+                <img src="svg/calendar_oval.svg" alt="megaphone" class="icons">
+            </div>
+        </div>
     </div>
     <div class="wrapper_main">
         <div class="column1 box">
-            <div class="filter_menu"> </div>
+            <div id="news" class="menu_item news_filter selected">
+                <img src="svg/megaphone_oval.svg" alt="megaphone" class="icons">
+            </div>
+            <div id="interview" class="menu_item interviews_filter selected">
+                <img src="svg/microphone_oval.svg" alt="microphone" class="icons">
+            </div>
+            <div id="review" class="menu_item reviews_filter selected">
+                <img src="svg/dice_oval.svg" alt="dice" class="icons">
+            </div>
+            <div class="menu_item"></div>
+            <div class="menu_item"></div>
+            <div class="menu_item"></div>
+            <div class="menu_item"></div>
+            <div id="mypage" class="menu_item mypage" class="icons">
+                <img src="svg/mypage_oval.svg" alt="mypage" class="icons">
+            </div>
         </div>
 
         <div class="column2 box">
+            <div id="article_box">
+                <article class="article_large newsarticle1" data-file="articles/article_one.html" data-target="article">
 
-            <article class="article_large" data-file="articles/article_one.html" data-target="article">
+                    <div class="article_photo_large">
+                        <h1 class="title_1">Google’s top secret weapon</h1>
+                        <h2>– a hacker they call their Security Princess</h2>
+                        <img class="btn1 btn" src="svg/readlist.svg">
+                        <img class="btn1check btn displaynone" src="svg/done_check.svg">
+                    </div>
 
-                <div class="article_photo_large">
-                    <h1 class="google">Google’s top secret weapon</h1>
-                    <h2>– a hacker they call their Security Princess</h2>
-                    <div class="btn"></div>
+                    <p class="article_description"><span class="eta time_1"></span></p>
+                    <p class="article_text"> Kort oppsummert tekst? </p>
+
+                </article>
+
+
+                <article class="article_small revarticle1" data-file="articles/article_one.html" data-target="article">
+
+
+                    <div class="article_photo_small">
+                        <h1 class="title_2">Spooky scary</h1>
+                        <h2>– a hacker they call their Security Princess</h2>
+                        <img class="btn2 btn" src="svg/readlist.svg">
+                        <img class="btn2check btn displaynone" src="svg/done_check.svg">
+                    </div>
+
+                    <p class="article_description"><span class="eta time_2"></span></p>
+                    <p class="article_text"> Kort oppsummert tekst? </p>
+
+
+                </article>
+
+                <article class="article_small intarticle1" data-file="articles/article_one.html" data-target="article">
+
+
+                    <div class="article_photo_small">
+                        <h1 class="title_3">Google’s top secret weapon</h1>
+                        <h2>– a hacker they call their Security Princess</h2>
+                        <img class="btn3 btn" src="svg/readlist.svg">
+                        <img class="btn3check btn displaynone" src="svg/done_check.svg">
+                    </div>
+
+                    <p class="article_description"><span class="eta time_3"></span></p>
+                    <p class="article_text">Kort oppsumert tekst? </p>
+
+
+                </article>
+            </div>
+
+            <div id="mypage_box" class="displaynone">
+                <div class="top_row">
+                    <div class="top_left">
+                        <img src="img/mypage_oval.svg" alt="my profile" class="mypage_img">
+                    </div>
+                    <div class="top_right">
+                        <h3> Annichen Woll Eide </h3>
+                        <p> Ditt abonnement er
+                            <bold> Junior</bold>. For å endre abonnement, ta kontakt på en av måtene under.</p>
+                    </div>
                 </div>
-
-                <p class="article_description"><span class="eta"></span></p>
-                <p class="article_text"> Kort oppsummert tekst? </p>
-
-            </article>
-
-
-            <article class="article_small" data-file="articles/article_one.html" data-target="article">
-
-
-                <div class="article_photo_small">
-                    <h1>Google’s top secret weapon</h1>
-                    <h2>– a hacker they call their Security Princess</h2>
+                <div class="bottom_row">
                 </div>
-
-                <p class="article_description"><span class="eta"></span></p>
-                <p class="article_text"> Kort oppsummert tekst? </p>
-
-
-            </article>
-
-            <article class="article_small" data-file="articles/article_one.html" data-target="article">
-
-
-                <div class="article_photo_small">
-                    <h1>Google’s top secret weapon</h1>
-                    <h2>– a hacker they call their Security Princess</h2>
-                </div>
-
-                <p class="article_description"><span class="eta"></span></p>
-                <p class="article_text">Kort oppsumert tekst? </p>
-
-
-            </article>
-
+            </div>
         </div>
         <div class="column3 box">
-            <!-- <div class="event_wrapper">
+            <div class="event_wrapper">
                 <div class="event">
                     <div class="calender"></div>
                     <div class="event_text">Lorem ipsum</div>
@@ -90,15 +130,26 @@
                     <div class="calender"></div>
                     <div class="event_text"></div>
                 </div>
-            </div> 
-            -->
-
-            <div class="reading_wrapper">
-                <div class="readinglist">
-                    <ul id="test" class="style"></ul>
-                </div>
-
             </div>
+
+
+            <div class="reading_wrapper displaynone">
+                <div class="reading_flex">
+
+                    <div class="reading_time">
+
+                        <ul id="clock"></ul>
+
+                    </div>
+
+                    <div class="reading_list">
+
+                        <ul id="list"></ul>
+
+                    </div>
+                </div>
+            </div>
+
 
         </div>
     </div>
@@ -106,6 +157,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/plugins/readingTime.js"></script>
     <script src="js/script.js"></script>
+
 </body>
 
 </html>

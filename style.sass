@@ -2,18 +2,23 @@
     box-sizing: border-box;
     overflow: hidden;
 
+body
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#29323C, #485563);
+
 /*TOPBAR/MENU*/
 .wrapper_head
     width: 100vw;
-    height: 64px;
-    background-color: gray;
-    
+    height: 7vh;
     
 .logo
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
-    padding-top: 8px;
+    padding-bottom: 8px;
     text-align: center;
+    letter-spacing: 6px;
+    color: white;
     
 .mypage
     display: block;
@@ -36,8 +41,7 @@
 /*WRAPPER FOR PAGE*/
 .wrapper_main
     width: 100vw;
-    height: 863px;
-    background-color: gray;
+    height: 93vh;
     display: flex;
     flex-wrap: wrap;
     
@@ -50,45 +54,45 @@
 
 /*DIVIDING THE PAGE INTO COLUMNS*/ 
 .column1 
-    width: 64px;
-    background-color: white;
-
+    width: 6vw;
 
 .column2 
-    margin-left: 16px;
-    width: 1240px;
+    
+    width: 74vw;
     background-color: white;
     overflow-y: scroll;
     padding: 0;
     
 .column3
-    margin-left: 16px;
-    width: 315px;
+    
+    width: 20vw;
     background-color: white;
     padding: 0;
 
 /*ARTICLE LAYOUT*/
 .article_photo_large
     height: 433px;
-    background-image: url('../Bilder/Test/first.jpeg')
+    width: 73vw;
+    background-image: url('img/first.jpeg')
     background-size: cover;
     position: relative;
     
 .article_photo_small
     height: 433px;
-    background-image: url('../Bilder/Test/first.jpeg')
+    background-image: url('img/first.jpeg')
     background-size: cover;
     position: relative;
     
 .article_large
     background-color: white;
-    width: 1240px;
+    width: 73vw;
     margin-bottom: 8px;
     display: inline-block;
     
 .article_small
     background-color: white;
-    width: 610.2px;
+    width: 36.4vw;
+    
     margin-bottom: 8px;
     display: inline-block;
 
@@ -116,9 +120,11 @@ p
     
 /*READING LIST*/
 .btn 
-    height: 100px;
-    width: 100px;
-    background-color: red;
+    min-height: 2vh;
+    min-width: 2vw;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
     
     
 .article_description
@@ -128,6 +134,52 @@ p
 .article_text
     font-weight: 400;
     
+/*READINGLIST LAYOUT*/
+.reading_wrapper
+    display: flex;
+    flex-wrap: wrap;
+
+.reading_time 
+    min-width: 2vw;
+    
+.reading_list
+    min-width: 15vw;
+    
+ul
+    padding: 0;
+    
+li
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(185, 185, 185, 0.2);
+    
+.clock
+    margin-left: 4px;
+    min-height: 10vh;
+    min-width: 4vw;
+    background: linear-gradient(#29323C, #485563);
+    border-radius: 0 20px 0 0;
+    display: inline-block;
+    color: white;
+    padding: 22px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+
+.list 
+    
+    min-height: 10vh;
+    min-width: 15vw;
+    display: inline-block;
+    padding: 16px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    
+    
+  
+
 /*EVENTS LAYOUT*/
 
 .event
@@ -141,7 +193,7 @@ p
 .calender
     height: 80px;
     width: 80px;
-    background-color: red;
+    background: linear-gradient(#29323C, #485563);
     border-radius: 0 20px 0 0;
     display: inline-block;
     
