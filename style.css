@@ -18,25 +18,15 @@ body {
 
 .wrapper_head {
     width: 100vw;
-    height: 10vh;
+    height: 9vh;
     color: white;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    position: relative;
     display: flex;
-}
-
-.mini_menu {
-    width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
+    margin-top: 2px;
 }
 
 .head_title {
     width: 88vw;
-}
-
-.logo {
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
     padding-top: 8px;
@@ -54,19 +44,13 @@ body {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .top_menu_item {
+    width: 6%;
     min-width: 55px;
-    width: 6vw;
     height: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
 }
 
 .icons {
@@ -75,19 +59,23 @@ body {
     height: 100%;
 }
 
+.icons_top {
+    padding: 15%;
+    width: 100%;
+    height: 100%;
+}
+
+.absolute {
+    position: absolute;
+}
+
 
 /*WRAPPER FOR PAGE*/
 
 .wrapper_main {
     width: 100vw;
-    height: 93vh;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    height: 91vh;
     display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
 }
 
 .box {
@@ -101,17 +89,18 @@ body {
 /*DIVIDING THE PAGE INTO COLUMNS*/
 
 .column1 {
-    width: 6vw;
+    width: 5vw;
     min-width: 55px;
     height: 100%;
     padding: 0;
 }
 
 .column2 {
-    width: 74vw;
+    width: 75vw;
     background-color: white;
     overflow-y: scroll;
     padding: 0;
+    border: 8px solid white;
 }
 
 .column3 {
@@ -129,7 +118,7 @@ body {
     background: linear-gradient( rgba(41, 50, 60, 0.3), rgba(72, 85, 99, 0.6)), url(img/news.jpg);
     background-size: cover;
     position: relative;
-    border: 8px solid white;
+    border-right: 4px solid white;
 }
 
 .article_photo_small_int {
@@ -137,7 +126,7 @@ body {
     position: relative;
     background: linear-gradient( rgba(41, 50, 60, 0.3), rgba(72, 85, 99, 0.6)), url(img/int.jpg);
     background-size: cover;
-    border: 8px solid white;
+    border: 4px solid white;
 }
 
 .article_photo_small_rev {
@@ -145,7 +134,7 @@ body {
     position: relative;
     background: linear-gradient( rgba(41, 50, 60, 0.3), rgba(72, 85, 99, 0.6)), url(img/x.png);
     background-size: cover;
-    border: 8px solid white;
+    border: 4px solid white;
 }
 
 .newsarticle1 {}
@@ -206,6 +195,7 @@ h1 {
     padding-left: 16px;
     color: white;
     position: absolute;
+    margin-bottom: 0;
     bottom: 0px;
     text-transform: uppercase;
 }
@@ -230,7 +220,7 @@ p {
 }
 
 
-/*READING LIST*/
+/*MENU BUTTONS LAYOUT*/
 
 .display {
     display: block;
@@ -240,9 +230,51 @@ p {
     display: none;
 }
 
-.selected {
-    background-color: white;
+.relative {
+    position: relative;
 }
+
+.width {
+    width: 0%;
+    margin-left: 100%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    transition: margin 0.5s;
+    -webkit-transition: margin 0.5s;
+}
+
+.height {
+    height: 0%;
+    border-radius: 16px 16px 0 0;
+    margin-top: 100%;
+}
+
+.selected {
+    width: 100%;
+    background-color: white;
+    transition: margin 0.5s;
+    -webkit-transition: margin 0.5s;
+    margin-left: 0;
+}
+
+.selected_back {
+    background-color: white;
+    transition: margin 0.5s;
+    -webkit-transition: margin 0.5s;
+    margin-left: 100%;
+    width: 100%;
+}
+
+.selected_top {
+    height: 100%;
+    background-color: white;
+    transition: margin 0.5s;
+    -webkit-transition: margin 0.5s;
+    margin: 0;
+}
+
+
+/*READING LIST*/
 
 .btn {
     min-height: 2vh;

@@ -29,14 +29,32 @@
 }
 
 .photo_box {
+    position: relative;
     width: 45vw;
     height: 100vh;
     background-color: gray;
+    position: relative;
+}
+
+.slider {
+    position: relative;
 }
 
 img {
     width: 100%;
     height: 100%;
+}
+
+.img_description {
+    width: 100%;
+    height: 5vh;
+    background-color: rgba(41, 50, 60, 0.79);
+    padding-top: 12px;
+    padding-left: 16px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    bottom: 0;
 }
 
 .line {
@@ -199,8 +217,9 @@ p {
     display: inline-block;
     border-radius: 0 40px 0 0;
     position: relative;
-    background: linear-gradient( rgba(72, 85, 99, 0.6), rgba(41, 50, 60, 0.6)), url(../img/first.jpeg);
+    background: linear-gradient( rgba(72, 85, 99, 0.6), rgba(41, 50, 60, 0.6)), url(../img/x.png);
     background-size: cover;
+    background-position: center;
 }
 
 .related2 {
@@ -210,7 +229,7 @@ p {
     display: inline-block;
     border-radius: 0 40px 0 0;
     position: relative;
-    background: linear-gradient( rgba(72, 85, 99, 0.6), rgba(41, 50, 60, 0.6)), url(../img/first.jpeg);
+    background: linear-gradient( rgba(72, 85, 99, 0.6), rgba(41, 50, 60, 0.6)), url(../img/int.jpg);
     background-size: cover;
 }
 
@@ -221,8 +240,9 @@ p {
     display: inline-block;
     border-radius: 0 40px 0 0;
     position: relative;
-    background: linear-gradient( rgba(72, 85, 99, 0.6), rgba(41, 50, 60, 0.6)), url(../img/first.jpeg);
+    background: linear-gradient( rgba(72, 85, 99, 0.6), rgba(41, 50, 60, 0.6)), url(../img/news.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .link {

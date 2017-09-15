@@ -42,6 +42,11 @@ function addtime1() {
     var children = ul.children.length + 1;
     li.innerHTML = '<div class="clock">' + time1.innerHTML + '</div>';
     ul.appendChild(li);
+
+    //if (ul == 0) {
+    //    document.getElementById('clock').classList.remove(displaynone);
+
+    //}
 }
 
 function addtext1() {
@@ -125,6 +130,13 @@ document.querySelector('.btn3').addEventListener('click', function () {
 
 });
 
+
+
+
+
+
+
+
 // News-button
 
 
@@ -138,13 +150,11 @@ function selectNews(event) {
     document.getElementById('article_box').classList.remove('displaynone');
     document.getElementById('mypage_box').classList.add('displaynone');
 
-    document.getElementById('news').classList.toggle('selected');
-    document.getElementById('mypage').classList.remove('selected');
+    document.getElementById('newsslide').classList.toggle('selected');
+    document.getElementById('newsslide').classList.toggle('selected_back');
+    document.getElementById('mypageslide').classList.remove('selected');
 
     document.querySelector('.newsarticle1').classList.toggle('displaynone');
-
-
-
 }
 
 
@@ -154,17 +164,18 @@ var btnInterview = document.getElementById("interview");
 btnInterview.addEventListener("click", selectInterview);
 
 function selectInterview(event) {
+
     console.log("interview");
 
     document.getElementById('article_box').classList.remove('displaynone');
     document.getElementById('mypage_box').classList.add('displaynone');
 
 
-    document.getElementById('interview').classList.toggle('selected');
-    document.getElementById('mypage').classList.remove('selected');
+    document.getElementById('intslide').classList.toggle('selected');
+    document.getElementById('intslide').classList.toggle('selected_back');
+    document.getElementById('mypageslide').classList.remove('selected');
 
     document.querySelector('.intarticle1').classList.toggle('displaynone');
-
 }
 
 
@@ -174,17 +185,18 @@ var btnReview = document.getElementById("review");
 btnReview.addEventListener("click", selectReview);
 
 function selectReview(event) {
+
     console.log("review");
 
     document.getElementById('article_box').classList.remove('displaynone');
     document.getElementById('mypage_box').classList.add('displaynone');
 
 
-    document.getElementById('review').classList.toggle('selected');
-    document.getElementById('mypage').classList.remove('selected');
+    document.getElementById('revslide').classList.toggle('selected');
+    document.getElementById('revslide').classList.toggle('selected_back');
+    document.getElementById('mypageslide').classList.remove('selected');
 
     document.querySelector('.revarticle1').classList.toggle('displaynone');
-
 }
 
 
@@ -194,26 +206,23 @@ var btnMypage = document.getElementById("mypage");
 btnMypage.addEventListener("click", selectMypage);
 
 function selectMypage(event) {
-    console.log("mypage");
-    document.getElementById('mypage').classList.add('selected');
 
-    document.getElementById('news').classList.remove('selected');
-    document.getElementById('interview').classList.remove('selected');
-    document.getElementById('review').classList.remove('selected');
+    console.log("mypage");
+    document.getElementById('mypageslide').classList.add('selected');
+
+
+    document.getElementById('newsslide').classList.remove('selected');
+    document.getElementById('intslide').classList.remove('selected');
+    document.getElementById('revslide').classList.remove('selected');
 
     document.getElementById('article_box').classList.add('displaynone');
     document.getElementById('mypage_box').classList.remove('displaynone');
 
-    // Add displaynone to all articled
+    // Add displaynone to all articles
 
     document.querySelector('.newsarticle1').classList.add('displaynone');
-
-
     document.querySelector('.intarticle1').classList.add('displaynone');
-
-
     document.querySelector('.revarticle1').classList.add('displaynone');
-
 
 }
 
@@ -226,8 +235,8 @@ btnEvents.addEventListener("click", selectEvents);
 
 
 function selectEvents(event) {
-    document.getElementById('events').classList.add('selected');
-    document.getElementById('articles').classList.remove('selected')
+    document.getElementById('eventslide').classList.add('selected_top');
+    document.getElementById('savedslide').classList.remove('selected_top')
 
     switch1.classList.remove('displaynone');
     switch2.classList.add('displaynone');
@@ -240,8 +249,8 @@ var btnArticles = document.getElementById("articles");
 btnArticles.addEventListener("click", selectArticles);
 
 function selectArticles(event) {
-    document.getElementById('articles').classList.add('selected');
-    document.getElementById('events').classList.remove('selected');
+    document.getElementById('savedslide').classList.add('selected_top');
+    document.getElementById('eventslide').classList.remove('selected_top');
 
     switch1.classList.add('displaynone');
     switch2.classList.remove('displaynone');

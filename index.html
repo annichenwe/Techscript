@@ -9,34 +9,37 @@
 
 <body>
     <div class="wrapper_head">
-
-        <div class="mini_menu">
-            <div class="head_title logo">Techscript</div>
-            <div id="articles" class="top_menu_item">
-                <img src="svg/savedarticles_oval.svg" alt="megaphone" class="icons">
-            </div>
-            <div id="events" class="top_menu_item selected">
-                <img src="svg/calendar_oval.svg" alt="megaphone" class="icons">
-            </div>
+        <div class="head_title">Techscript</div>
+        <div id="articles" class="top_menu_item relative">
+            <img src="svg/savedarticles_oval.svg" alt="megaphone" class="icons_top absolute">
+            <div id="savedslide" class="height"></div>
+        </div>
+        <div id="events" class="top_menu_item relative">
+            <img src="svg/calendar_oval.svg" alt="megaphone" class="icons_top absolute">
+            <div id="eventslide" class="height"></div>
         </div>
     </div>
     <div class="wrapper_main">
         <div class="column1 box">
-            <div id="news" class="menu_item news_filter selected">
-                <img src="svg/megaphone_oval.svg" alt="megaphone" class="icons">
+            <div id="news" class="menu_item relative">
+                <img src="svg/megaphone_oval.svg" alt="megaphone" class="icons absolute">
+                <div id="newsslide" class="width selected"></div>
             </div>
-            <div id="interview" class="menu_item interviews_filter selected">
-                <img src="svg/microphone_oval.svg" alt="microphone" class="icons">
+            <div id="interview" class="menu_item relative">
+                <img src="svg/microphone_oval.svg" alt="microphone" class="icons absolute">
+                <div id="intslide" class="width selected"></div>
             </div>
-            <div id="review" class="menu_item reviews_filter selected">
-                <img src="svg/dice_oval.svg" alt="dice" class="icons">
+            <div id="review" class="menu_item relative">
+                <img src="svg/dice_oval.svg" alt="dice" class="icons absolute">
+                <div id="revslide" class="width selected"></div>
             </div>
             <div class="menu_item"></div>
             <div class="menu_item"></div>
             <div class="menu_item"></div>
             <div class="menu_item"></div>
-            <div id="mypage" class="menu_item mypage" class="icons">
-                <img src="svg/mypage_oval.svg" alt="mypage" class="icons">
+            <div id="mypage" class="menu_item">
+                <img src="svg/mypage_oval.svg" alt="mypage" class="icons absolute">
+                <div id="mypageslide" class="width"></div>
             </div>
         </div>
 

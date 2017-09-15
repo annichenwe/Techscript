@@ -1,7 +1,6 @@
 $('article').readingTime();
 
 
-
 //ARTICLE PICTURE SLIDER
 
 var i = 0;
