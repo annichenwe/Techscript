@@ -7,7 +7,6 @@
 .wrapper_main {
     width: 100vw;
     height: 100vh;
-    background-color: #c1c1d8;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -17,12 +16,16 @@
     flex-wrap: wrap;
 }
 
-.article_layout {
+.wrapper_article {
     width: 55vw;
     height: 100vh;
-    background-color: white;
-    padding-left: 32px;
     overflow-y: scroll;
+}
+
+.article_layout {
+    background-color: white;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .photo_box {
@@ -31,22 +34,203 @@
     background-color: gray;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.line {
+    min-width: 55vw;
+    height: 2px;
+    background: linear-gradient(to right, #29323C, #485563);
+}
+
+.divide_line {
+    background: linear-gradient(to right, #29323C, #485563);
+    height: 2px;
+    width: 10vw;
+    text-align: center;
+    margin: 5vh auto;
+}
+
+
+/*DESCRIPTION LINE*/
+
+.description {
+    width: 49vw;
+    height: 5vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.article_description {
+    width: 44vw;
+    padding-top: 2px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #485563;
+}
+
+.time_wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 5vw;
+}
+
+.eta {
+    padding-top: 2px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #485563;
+}
+
+.icon_time {
+    height: 28px;
+    width: 26px;
+    padding-left: 4px;
+}
+
+
+/*LISTSTYLE & QUOTE*/
+
+ul li {
+    display: list-item;
+    list-style-type: circle;
+    overflow: visible;
+    padding-left: 30px;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.quote {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 24px;
+    margin-left: 96px;
+    padding-bottom: 36px;
+    padding-top: 36px;
+    padding-left: 20px;
+    border-left: 2px solid #485563;
+}
+
 
 /*FONT AND COLOR*/
 
 .title {
-    color: gray;
     font-family: 'Oswald', sans-serif;
     font-size: 40px;
     font-weight: 400;
+    color: #485563;
 }
 
 h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 4.5vw;
     font-weight: 400;
+    margin-bottom: 0;
+}
+
+.title_brain {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3vw;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.big {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5vw;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+h3 {
+    margin-top: 8px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    padding-left: 8px;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 32px;
+}
+
+.content {
+    padding-left: 52px;
+    padding-right: 52px;
+}
+
+.ingress {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+/*ARTICLE BOTTOM BAR*/
+
+.bottom_bar {
+    width: 54.1vw;
+    height: 27vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.related1 {
+    margin-top: 16px;
+    width: 220px;
+    height: 220px;
+    display: inline-block;
+    border-radius: 0 40px 0 0;
+    position: relative;
+    background: linear-gradient( rgba(72, 85, 99, 0.6), rgba(41, 50, 60, 0.6)), url(../img/first.jpeg);
+    background-size: cover;
+}
+
+.related2 {
+    margin-top: 16px;
+    width: 220px;
+    height: 220px;
+    display: inline-block;
+    border-radius: 0 40px 0 0;
+    position: relative;
+    background: linear-gradient( rgba(72, 85, 99, 0.6), rgba(41, 50, 60, 0.6)), url(../img/first.jpeg);
+    background-size: cover;
+}
+
+.related3 {
+    margin-top: 16px;
+    width: 220px;
+    height: 220px;
+    display: inline-block;
+    border-radius: 0 40px 0 0;
+    position: relative;
+    background: linear-gradient( rgba(72, 85, 99, 0.6), rgba(41, 50, 60, 0.6)), url(../img/first.jpeg);
+    background-size: cover;
+}
+
+.link {
+    position: absolute;
+    bottom: 0;
+    padding: 16px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
 }
