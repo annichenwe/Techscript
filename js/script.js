@@ -36,8 +36,6 @@ var check3 = document.querySelector('.btn3check');
 
 
 
-
-
 var close2 = document.querySelector('.close2');
 var close3 = document.querySelector('.close3');
 
