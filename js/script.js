@@ -167,17 +167,36 @@ var btnNews = document.getElementById("news");
 btnNews.addEventListener("click", selectNews);
 
 function selectNews(event) {
-
     console.log("news");
 
+    // Om Knappen allerede er selected når den blir klikket på, skal den kjøre selected-back-animasjon, den skal fjerne .selected og den skal skjule (displaynone) artikkelen tilknyttet katagorien.
+
+    if (document.getElementById('newsslide').classList.contains('selected')) {
+        document.getElementById('newsslide').classList.add('selected_back');
+        document.getElementById('newsslide').classList.remove('selected');
+        document.querySelector('.newsarticle1').classList.add('displaynone');
+        return;
+    }
+
+
+    // Om Knappen ikke er selected fra før: 
+    // article_box skal vise
     document.getElementById('article_box').classList.remove('displaynone');
+
+    // mypage_box skal ikke vise
     document.getElementById('mypage_box').classList.add('displaynone');
 
-    document.getElementById('newsslide').classList.toggle('selected');
-    document.getElementById('newsslide').classList.toggle('selected_back');
+    // slide-in-animasjon skal vise
+    document.getElementById('newsslide').classList.add('selected');
+
+    // slide-ut-animasjon skal ikke vise
+    document.getElementById('newsslide').classList.remove('selected_back');
+
+    // mypage-knapp skal ikke være markert lenger
     document.getElementById('mypageslide').classList.remove('selected');
 
-    document.querySelector('.newsarticle1').classList.toggle('displaynone');
+    // Artikkelen
+    document.querySelector('.newsarticle1').classList.remove('displaynone');
 }
 
 
@@ -187,18 +206,35 @@ var btnInterview = document.getElementById("interview");
 btnInterview.addEventListener("click", selectInterview);
 
 function selectInterview(event) {
-
     console.log("interview");
 
+    // Om Knappen allerede er selected når den blir klikket på, skal den kjøre selected-back-animasjon, den skal fjerne .selected og den skal skjule (displaynone) artikkelen tilknyttet katagorien.
+
+    if (document.getElementById('intslide').classList.contains('selected')) {
+        document.getElementById('intslide').classList.add('selected_back');
+        document.getElementById('intslide').classList.remove('selected');
+        document.querySelector('.intarticle1').classList.add('displaynone');
+        return;
+    }
+
+    // Om Knappen ikke er selected fra før: 
+    // article_box skal vise
     document.getElementById('article_box').classList.remove('displaynone');
+
+    // mypage_box skal ikke vise
     document.getElementById('mypage_box').classList.add('displaynone');
 
+    // slide-in-animasjon skal vise
+    document.getElementById('intslide').classList.add('selected');
 
-    document.getElementById('intslide').classList.toggle('selected');
-    document.getElementById('intslide').classList.toggle('selected_back');
+    // slide-ut-animasjon skal ikke vise
+    document.getElementById('intslide').classList.remove('selected_back');
+
+    // mypage-knapp skal ikke være markert lenger
     document.getElementById('mypageslide').classList.remove('selected');
 
-    document.querySelector('.intarticle1').classList.toggle('displaynone');
+    // Artikkelen
+    document.querySelector('.intarticle1').classList.remove('displaynone');
 }
 
 
@@ -208,20 +244,36 @@ var btnReview = document.getElementById("review");
 btnReview.addEventListener("click", selectReview);
 
 function selectReview(event) {
-
     console.log("review");
 
+    // Om Knappen allerede er selected når den blir klikket på, skal den kjøre selected-back-animasjon, den skal fjerne .selected og den skal skjule (displaynone) artikkelen tilknyttet katagorien.
+
+    if (document.getElementById('revslide').classList.contains('selected')) {
+        document.getElementById('revslide').classList.add('selected_back');
+        document.getElementById('revslide').classList.remove('selected');
+        document.querySelector('.revarticle1').classList.add('displaynone');
+        return;
+    }
+
+    // Om Knappen ikke er selected fra før: 
+    // article_box skal vise
     document.getElementById('article_box').classList.remove('displaynone');
+
+    // mypage_box skal ikke vise
     document.getElementById('mypage_box').classList.add('displaynone');
 
+    // slide-in-animasjon skal vise
+    document.getElementById('revslide').classList.add('selected');
 
-    document.getElementById('revslide').classList.toggle('selected');
-    document.getElementById('revslide').classList.toggle('selected_back');
+    // slide-ut-animasjon skal ikke vise
+    document.getElementById('revslide').classList.remove('selected_back');
+
+    // mypage-knapp skal ikke være markert lenger
     document.getElementById('mypageslide').classList.remove('selected');
 
-    document.querySelector('.revarticle1').classList.toggle('displaynone');
+    // Artikkelen
+    document.querySelector('.revarticle1').classList.remove('displaynone');
 }
-
 
 // My Page-button
 
@@ -229,20 +281,21 @@ var btnMypage = document.getElementById("mypage");
 btnMypage.addEventListener("click", selectMypage);
 
 function selectMypage(event) {
-
     console.log("mypage");
     document.getElementById('mypageslide').classList.add('selected');
 
-
+    // Meny-knappene skal ikke være markert lenger
     document.getElementById('newsslide').classList.remove('selected');
     document.getElementById('intslide').classList.remove('selected');
     document.getElementById('revslide').classList.remove('selected');
 
+    // article_box skal ikke være synlig lenger
     document.getElementById('article_box').classList.add('displaynone');
+
+    // mypage_box skal være synlig
     document.getElementById('mypage_box').classList.remove('displaynone');
 
-    // Add displaynone to all articles
-
+    // Ingen av artiklene skal være synlige, slik at de blir nullstillt til neste gang man klikker på menyen
     document.querySelector('.newsarticle1').classList.add('displaynone');
     document.querySelector('.intarticle1').classList.add('displaynone');
     document.querySelector('.revarticle1').classList.add('displaynone');

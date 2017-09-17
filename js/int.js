@@ -19,10 +19,14 @@ function swapImage() {
     } else {
         i = 0;
     }
-    setTimeout("swapImage()", 10000);
+    setInterval("swapImage()", 10000);
+
+
+
+
 }
 
-timer = setTimeout("swapImage()", 10000);
+timer = setInterval("swapImage()", 10000);
 
 
 var il = 0;
@@ -36,12 +40,13 @@ function swapText() {
 
     document.querySelector('.img_description').innerHTML = text[i];
 
-    if (i < text.length - 1) {
-        i++
+    if (il < text.length - 1) {
+        il++
     } else {
-        i = 0;
+        il = 0;
     }
-    setTimeout("swapText()", 10000);
+    setInterval("swapText()", 10000);
 }
 
-timer2 = setTimeout("swapText()", 10000);
+
+timer2 = setInterval("swapText()", 10000);
