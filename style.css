@@ -33,6 +33,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 8px;
+    padding-left: 100px;
 }
 
 .menu_item {
