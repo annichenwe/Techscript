@@ -34,28 +34,42 @@ var check1 = document.querySelector('.btn1check');
 var check2 = document.querySelector('.btn2check');
 var check3 = document.querySelector('.btn3check');
 
+
+
+
+
+var close2 = document.querySelector('.close2');
+var close3 = document.querySelector('.close3');
+
+
+
 /*ADD TWO LI TO UL*/
 /*#1*/
-function addtime1() {
+function addtext1() {
     var ul = document.getElementById("clock");
     var li = document.createElement("li");
+    li.className = 'li1';
     var children = ul.children.length + 1;
-    li.innerHTML = '<div class="clock">' + time1.innerHTML + '</div>';
+    li.innerHTML = '<a class="link_list link_list1" href="articles/article_mind_news.html">' + '<div class="list">' + title1.innerHTML + '</div>' + '<div class="clock">' + time1.innerHTML + '<img class="stopwatch" src="svg/timewatch.svg">' + '</div>' + '</a>' + '<div class="add_remove">' +
+        '<a class="read read1" href="articles/article_mind_news.html">Read</a>' + '<div class="close close1">x</div>' + '</div>';
     ul.appendChild(li);
 
     //if (ul == 0) {
     //    document.getElementById('clock').classList.remove(displaynone);
-
     //}
+
+    document.querySelector('.close1').addEventListener('click', function () {
+        var remove = document.querySelector('.li1');
+        console.log('halvveis');
+
+        remove.parentNode.removeChild(remove);
+
+        add1.classList.toggle('displaynone');
+        check1.classList.toggle('displaynone');
+
+    });
 }
 
-function addtext1() {
-    var ul = document.getElementById("list");
-    var li = document.createElement("li");
-    var children = ul.children.length + 1;
-    li.innerHTML = '<div class="list">' + title1.innerHTML + '</div>';
-    ul.appendChild(li);
-}
 
 function toggle1() {
     add1.classList.toggle('displaynone');
@@ -64,28 +78,33 @@ function toggle1() {
 
 document.querySelector('.btn1').addEventListener('click', function () {
 
-    addtime1();
     addtext1();
     toggle1();
 
 });
 
 /*#2*/
-function addtime2() {
+function addtext2() {
     var ul = document.getElementById("clock");
     var li = document.createElement("li");
+    li.className = 'li2';
     var children = ul.children.length + 1;
-    li.innerHTML = '<div class="clock">' + time2.innerHTML + '</div>';
+    li.innerHTML = '<a class="link_list" href="articles/article_Runa_int.html">' + '<div class="list">' + title2.innerHTML + '</div>' + '<div class="clock">' + time2.innerHTML + '<img class="stopwatch" src="svg/timewatch.svg">' + '</div>' + '</a>' + '<div class="add_remove">' +
+        '<a class="read read2" href="articles/article_mind_news.html">Read</a>' + '<div class="close close2">x</div>' + '</div>';
     ul.appendChild(li);
+
+    document.querySelector('.close2').addEventListener('click', function () {
+        var remove = document.querySelector('.li2');
+        console.log('halvveis');
+
+        remove.parentNode.removeChild(remove);
+
+        add2.classList.toggle('displaynone');
+        check2.classList.toggle('displaynone');
+
+    });
 }
 
-function addtext2() {
-    var ul = document.getElementById("list");
-    var li = document.createElement("li");
-    var children = ul.children.length + 1;
-    li.innerHTML = '<div class="list">' + title2.innerHTML + '</div>';
-    ul.appendChild(li);
-}
 
 function toggle2() {
     add2.classList.toggle('displaynone');
@@ -94,28 +113,33 @@ function toggle2() {
 
 document.querySelector('.btn2').addEventListener('click', function () {
 
-    addtime2();
     addtext2();
     toggle2();
 
 });
 
 /*#3*/
-function addtime3() {
+function addtext3() {
     var ul = document.getElementById("clock");
     var li = document.createElement("li");
+    li.className = 'li3';
     var children = ul.children.length + 1;
-    li.innerHTML = '<div class="clock">' + time3.innerHTML + '</div>';
+    li.innerHTML = '<a class="link_list" href="articles/article_iphone_rev.html">' + '<div class="list">' + title3.innerHTML + '</div>' + '<div class="clock">' + time3.innerHTML + '<img class="stopwatch" src="svg/timewatch.svg">' + '</div>' + '</a>' + '<div class="add_remove">' +
+        '<a class="read read3" href="articles/article_mind_news.html">Read</a>' + '<div class="close close3">x</div>' + '</div>';
     ul.appendChild(li);
+
+    document.querySelector('.close3').addEventListener('click', function () {
+        var remove = document.querySelector('.li3');
+        console.log('halvveis');
+
+        remove.parentNode.removeChild(remove);
+
+        add3.classList.toggle('displaynone');
+        check3.classList.toggle('displaynone');
+
+    });
 }
 
-function addtext3() {
-    var ul = document.getElementById("list");
-    var li = document.createElement("li");
-    var children = ul.children.length + 1;
-    li.innerHTML = '<div class="list">' + title3.innerHTML + '</div>';
-    ul.appendChild(li);
-}
 
 function toggle3() {
     add3.classList.toggle('displaynone');
@@ -124,7 +148,6 @@ function toggle3() {
 
 document.querySelector('.btn3').addEventListener('click', function () {
 
-    addtime3();
     addtext3();
     toggle3();
 
