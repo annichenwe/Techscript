@@ -509,18 +509,20 @@ button {
 }
 
 ul {
+    list-style-type: none;
     padding: 0;
 }
 
 li {
-    list-style: none;
+    list-style-type: none;
+    height: 100px;
     width: 18vw;
     border-bottom: 1px solid rgba(185, 185, 185, 0.2);
     position: relative;
 }
 
 .list {
-    padding-top: 8px;
+    padding-top: 16px;
     min-width: 16vw;
     display: inline-block;
     font-family: 'Oswald', sans-serif;
