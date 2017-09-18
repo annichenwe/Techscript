@@ -162,7 +162,7 @@ body {
 
 .article_small {
     background-color: white;
-    width: 49%;
+    width: 49.2%;
     margin-bottom: 8px;
     display: inline-block;
     position: relative;
@@ -230,7 +230,7 @@ p {
 }
 
 .contain_small {
-    width: 98.8%;
+    width: 98.4%;
     height: 32px;
     position: absolute;
     display: flex;
