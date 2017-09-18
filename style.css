@@ -28,7 +28,7 @@ body {
 .head_title {
     width: 88vw;
     font-family: 'Oswald', sans-serif;
-    font-size: 50px;
+    font-size: 46px;
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
@@ -527,7 +527,7 @@ li {
     display: inline-block;
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .clock {
@@ -571,7 +571,7 @@ li {
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
     font-size: 28px;
-    line-height: 80px;
+    line-height: 100px;
     text-transform: uppercase;
     color: #fff;
     text-align: center;
@@ -591,7 +591,7 @@ li {
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
     font-size: 30px;
-    line-height: 72px;
+    line-height: 92px;
     color: #fff;
     text-align: center;
 }
@@ -639,8 +639,8 @@ li {
 }
 
 .calender {
-    padding-top: 14px;
-    width: 70%;
+    padding-top: 8px;
+    width: 60%;
     height: 50% font-family: 'Oswald', sans-serif;
     font-weight: 200;
     color: black;
@@ -654,7 +654,7 @@ li {
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
     color: #485563;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .event_text {
